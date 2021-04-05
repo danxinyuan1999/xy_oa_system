@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>xy_oa_system_mbg</module>
+        <module>xy_oa_system_api</module>
     </modules>
 
     <parent>
