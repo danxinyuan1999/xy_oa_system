@@ -26,6 +26,8 @@ public class SysDepart implements Serializable {
      */
     private String note;
 
+    private Long parentId;
+
     private static final long serialVersionUID = 1L;
 
     public Long getId() {
@@ -60,6 +62,14 @@ public class SysDepart implements Serializable {
         this.note = note;
     }
 
+    public Long getParentId() {
+        return parentId;
+    }
+
+    public void setParentId(Long parentId) {
+        this.parentId = parentId;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -70,6 +80,7 @@ public class SysDepart implements Serializable {
         sb.append(", name=").append(name);
         sb.append(", description=").append(description);
         sb.append(", note=").append(note);
+        sb.append(", parentId=").append(parentId);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
