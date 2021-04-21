@@ -44,7 +44,7 @@ public class SysUserServiceImpl implements SysUserService {
     public List<SysUser> list(String keyword, Integer pageNum, Integer pageSize) {
         PageHelper.startPage(pageNum, pageSize);
         SysUserExample sysUserExample = new SysUserExample();
-        sysUserExample.setOrderByClause("sort desc");
+//        sysUserExample.setOrderByClause("sort desc");
         SysUserExample.Criteria criteria = sysUserExample.createCriteria();
         if (!StringUtils.isEmpty(keyword)) {
             criteria.andUsernameLike("%" + keyword + "%");

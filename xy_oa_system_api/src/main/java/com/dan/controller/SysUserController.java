@@ -82,7 +82,7 @@ public class SysUserController {
     }
 
     @ApiOperation("获取用户指定用户信息")
-    @GetMapping("/getUserDetail/{id}")
+    @GetMapping("/{id}")
     public ApiResult<SysUser> getUserDetail(@PathVariable("id") Long id) {
         SysUser user = userService.getUserById(id);
         return ApiResult.success(user);
